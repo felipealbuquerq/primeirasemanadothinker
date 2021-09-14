@@ -7,12 +7,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

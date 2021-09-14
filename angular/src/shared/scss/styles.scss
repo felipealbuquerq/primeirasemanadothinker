@@ -9643,7 +9643,7 @@
       min-height: 75vh !important;
     }
     .min-vh-sm-100 {
-      min-height: 100vh !important;
+      min-height: 80vh !important;
     }
     .flex-sm-fill {
       -webkit-box-flex: 1 !important;
@@ -16876,14 +16876,6 @@
   section {
     position: relative;
     padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  
-  @media (min-width: 992px) {
-    section {
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
-    }
   }
   
   input,
