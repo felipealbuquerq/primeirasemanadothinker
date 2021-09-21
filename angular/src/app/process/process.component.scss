@@ -1,0 +1,37 @@
+.content {
+    .row {
+        .hero-image {
+            padding-left: 120px;
+        }
+        .hero-text {
+            padding-top: 50px;
+            padding-left: 50px;
+            .row {
+                margin-bottom: 20px;
+
+                .hero-title {
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
+                .hero-description {
+                    p {
+                        margin-bottom: 0.2em;
+                        font-size: 16px;
+                    }
+                }
+                .checklist {
+                    li { 
+                        list-style-image: url(/assets/icons/check-icon.svg);
+                        margin-bottom: 5px;
+                        label {
+                            position: absolute;
+                            margin-top: -6px;
+                            margin-left: 5px;
+                        }
+                    }                     
+                }
+            }
+        }
+    }
+}
