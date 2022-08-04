@@ -1,10 +1,10 @@
-<div class="card">
-  <div class="card-flex-header">
+<div class="card" [ngClass]="{ actived: isActived }">
+  <div class="think-card">
     <div class="card-infos">
       <img class="testimonials-image" [src]="image" alt="card user image" />
       <div class="texts">
         <h5>{{ name }}</h5>
-        <h6>{{ place }}</h6>
+        <h6 class="fw-lighter text-black-50">{{ place }}</h6>
       </div>
     </div>
     <div class="stars">
