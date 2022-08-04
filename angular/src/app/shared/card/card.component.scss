@@ -6,8 +6,8 @@
     .card-infos {
       & .testimonials-image {
         border-radius: 50%;
-        width: 15%;
-        aspect-ratio: 4/3;
+        width: 3rem;
+        height: 3rem;
       }
       & {
         display: flex;
@@ -19,6 +19,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      strong {
+        transform: translateY(10%);
+        margin-right: 0.4rem;
+      }
       img {
         width: 1.5rem;
       }
@@ -35,7 +40,7 @@
   & {
     width: 25rem;
     border-width: 2px;
-    margin-right: 1rem;
+    margin-right: 3rem;
     padding: 1.3rem;
     &.actived {
       border: solid 2px var(--primary-color);
