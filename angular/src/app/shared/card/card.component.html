@@ -1,26 +1,18 @@
 <div class="card">
   <div class="card-flex-header">
     <div class="card-infos">
-      <img
-        class="testimonials-image"
-        src="https://files.tecnoblog.net/wp-content/uploads/2022/03/copiar-texto-imagem-2.png"
-        alt="card user image"
-      />
+      <img class="testimonials-image" [src]="image" alt="card user image" />
       <div class="texts">
-        <h5>Warner Batista</h5>
-        <h6>Presidente prudente, SP</h6>
+        <h5>{{ name }}</h5>
+        <h6>{{ place }}</h6>
       </div>
     </div>
     <div class="stars">
-      <strong>4,5</strong>
+      <strong>{{ stars }}</strong>
       <img src="assets/img/gallery/star.png" alt="" />
     </div>
   </div>
   <div class="card-body">
-    <p>
-      "Foi muito bacana .... Quando eu comecei tinha muito medo de pegar algum
-      projeto para fazer. hoje eu já sinto mais confiança.Agora apareceu uma
-      oportunidade bem bacana que antes eu não teria condições de encarar".
-    </p>
+    <p>{{ text }}</p>
   </div>
 </div>
