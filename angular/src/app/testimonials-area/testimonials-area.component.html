@@ -11,18 +11,22 @@
     </div>
 
     <div class="card-container">
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
+      <app-card
+        *ngFor="let testimonial of testimonials"
+        [name]="testimonial.name"
+        [place]="testimonial.place"
+        [image]="testimonial.image"
+        [stars]="testimonial.stars"
+        [text]="testimonial.text"
+      ></app-card>
     </div>
     <div class="footer-testimonials">
       <div class="marker-container">
-        <div class="marker actived"></div>
-        <div class="marker"></div>
-        <div class="marker"></div>
-        <div class="marker"></div>
-        <div class="marker"></div>
-        <div class="marker"></div>
+        <div
+          *ngFor="let testimonial of testimonials; let index = index"
+          class="marker"
+          [ngClass]="{ actived: testimonialIndex === index }"
+        ></div>
       </div>
 
       <div class="button-container">
