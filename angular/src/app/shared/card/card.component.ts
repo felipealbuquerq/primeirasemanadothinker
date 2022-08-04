@@ -11,4 +11,5 @@ export class CardComponent {
   @Input() image = '';
   @Input() stars = '0';
   @Input() text = '';
+  @Input() isActived = false;
 }

@@ -1,23 +1,26 @@
 <div class="think-container">
   <section>
     <div class="text-container">
-      <h2 class="fw-semi-bold text-center">
-        Thinkers que aprenderam e estão satisfeitos
+      <h2 class="fw-bold text-center">
+        Thinkers que aprenderam <br />
+        e estão satisfeitos
       </h2>
-      <h5 class="fw-lighter text-black-50 text-center fs--1">
+      <h5 class="fw-lighter text-black-50 text-center subtitle">
         Essas são as histórias de nossos thinkers que se juntaram a nós com
+        <br />
         muito prazer ao aprender esse processo inovador.
       </h5>
     </div>
 
     <div class="card-container">
       <app-card
-        *ngFor="let testimonial of testimonials"
+        *ngFor="let testimonial of testimonials; let index = index"
         [name]="testimonial.name"
         [place]="testimonial.place"
         [image]="testimonial.image"
         [stars]="testimonial.stars"
         [text]="testimonial.text"
+        [isActived]="testimonialIndex === index"
       ></app-card>
     </div>
     <div class="footer-testimonials">
