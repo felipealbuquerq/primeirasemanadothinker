@@ -13,26 +13,23 @@ export class TestimonialsAreaComponent {
     {
       name: 'Warner Batista',
       place: 'Presidente prudente, SP',
-      image:
-        'https://files.tecnoblog.net/wp-content/uploads/2022/03/copiar-texto-imagem-2.png',
+      image: 'https://ca.slack-edge.com/T2CSA6T8F-U01JS2G94MP-c75c400ebfa5-512',
       stars: '4.5',
       text: '"Foi muito bacana .... Quando eu comecei tinha muito medo de pegar algum projeto para fazer. hoje eu já sinto mais confiança.Agora apareceu uma oportunidade bem bacana que antes eu não teria condições de encarar".',
     },
     {
-      name: 'Warner Batista',
-      place: 'Presidente prudente, SP',
-      image:
-        'https://files.tecnoblog.net/wp-content/uploads/2022/03/copiar-texto-imagem-2.png',
+      name: 'Camila Marques',
+      place: 'São José dos Campos, SP',
+      image: 'https://i.ibb.co/m092Y1J/image.png',
       stars: '4.5',
-      text: '"Foi muito bacana .... Quando eu comecei tinha muito medo de pegar algum projeto para fazer. hoje eu já sinto mais confiança.Agora apareceu uma oportunidade bem bacana que antes eu não teria condições de encarar".',
+      text: '"Como eu estava em transição de carreira eu tinha medo de pegar um projeto enorme,e hoje eu vejo que são vários passos,e de pouco a pouco o projeto está pronto".',
     },
     {
-      name: 'Warner Batista',
+      name: 'Érica Sene ',
       place: 'Presidente prudente, SP',
-      image:
-        'https://files.tecnoblog.net/wp-content/uploads/2022/03/copiar-texto-imagem-2.png',
+      image: 'https://ca.slack-edge.com/T2CSA6T8F-U3A05PRRD-ffd4997aba4c-512',
       stars: '4.5',
-      text: '"Foi muito bacana .... Quando eu comecei tinha muito medo de pegar algum projeto para fazer. hoje eu já sinto mais confiança.Agora apareceu uma oportunidade bem bacana que antes eu não teria condições de encarar".',
+      text: '"Eu sentia muito a sindrome do impostor, por mais que fizesse o trabalho eu não imaginava que estava agregando valor o bastante,e hoje consigo enxergar a diferença que consigo fazer em um projeto.".',
     },
   ];
 
@@ -46,8 +43,6 @@ export class TestimonialsAreaComponent {
       Math.max(this.testimonialIndex + value, 0),
       this.testimonials.length - 1
     );
-    console.log(result);
-
     this.testimonialIndex = result;
     this.moveCard();
   }
