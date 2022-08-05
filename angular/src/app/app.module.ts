@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { ProcessComponent } from './process/process.component';
+import { GlobalNetworkComponent } from './global-network/global-network.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProcessComponent } from './process/process.component';
     MenuComponent,
     HomeComponent,
     CounterComponent,
-    ProcessComponent
+    ProcessComponent,
+    GlobalNetworkComponent
   ],
   imports: [
     BrowserModule,
