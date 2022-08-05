@@ -13,15 +13,17 @@
     </div>
 
     <div class="card-container">
-      <app-card
-        *ngFor="let testimonial of testimonials; let index = index"
-        [name]="testimonial.name"
-        [place]="testimonial.place"
-        [image]="testimonial.image"
-        [stars]="testimonial.stars"
-        [text]="testimonial.text"
-        [isActived]="testimonialIndex === index"
-      ></app-card>
+      <div class="card-items">
+        <app-card
+          *ngFor="let testimonial of testimonials; let index = index"
+          [name]="testimonial.name"
+          [place]="testimonial.place"
+          [image]="testimonial.image"
+          [stars]="testimonial.stars"
+          [text]="testimonial.text"
+          [isActived]="testimonialIndex === index"
+        ></app-card>
+      </div>
     </div>
     <div class="footer-testimonials">
       <div class="marker-container">
@@ -29,15 +31,16 @@
           *ngFor="let testimonial of testimonials; let index = index"
           class="marker"
           [ngClass]="{ actived: testimonialIndex === index }"
+          (click)="handleNavigation(index, 'exact')"
         ></div>
       </div>
 
       <div class="button-container">
-        <button class="btn-circle-stroke">
+        <button class="btn-circle-stroke" (click)="handleNavigation(-1)">
           <em class="bi bi-arrow-left-short"></em>
         </button>
 
-        <button class="btn-circle-fill">
+        <button class="btn-circle-fill" (click)="handleNavigation(1)">
           <em class="bi bi-arrow-right-short"></em>
         </button>
       </div>

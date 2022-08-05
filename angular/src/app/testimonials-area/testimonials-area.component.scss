@@ -20,6 +20,11 @@
       max-width: 70rem;
       width: 100%;
       overflow-x: hidden;
+      .card-items {
+        display: flex;
+        width: 100%;
+        // transform: translateX(-200px);
+      }
     }
 
     .text-container {
