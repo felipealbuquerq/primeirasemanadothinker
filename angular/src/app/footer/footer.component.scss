@@ -1,0 +1,26 @@
+.content {
+  .row {
+    .hero-image {
+      padding-left: 120px;
+    }
+    .hero-text {
+      padding-top: 50px;
+      padding-left: 50px;
+      .row {
+        margin-bottom: 20px;
+
+        .hero-title {
+          h3 {
+            font-size: 20px;
+          }
+        }
+        .hero-description {
+          p {
+            margin-bottom: 0.2em;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
