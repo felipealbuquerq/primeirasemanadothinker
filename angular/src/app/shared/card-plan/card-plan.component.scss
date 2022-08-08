@@ -1,0 +1,91 @@
+$distance: 1rem;
+
+.card {
+  & {
+    border-width: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.actived {
+      border-color: var(--primary-color);
+    }
+  }
+
+  & .card-top {
+    & {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    ul {
+      position: relative;
+      list-style: none;
+      margin-left: 0;
+
+      & li {
+        display: flex;
+        align-items: center;
+        // transform: translateX(-$distance);
+        color: var(--base-color-text);
+        & img {
+          transform: scale(0.5);
+          margin-right: $distance;
+        }
+        & small {
+          font-size: 1rem;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  & .card-bottom {
+    & {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    & .price {
+      * {
+        font-size: 1.5rem;
+      }
+      & small {
+        margin-left: 0.2rem;
+        color: var(--base-color-text);
+      }
+      & strong {
+        color: #000000;
+      }
+    }
+
+    & button {
+      margin-top: 0.8rem;
+      background-color: var(--white);
+      color: var(--primary-color);
+      border: solid 2px var(--primary-color);
+      border-radius: 50px;
+      width: 11rem;
+      padding: 0.4rem 0;
+      position: relative;
+      z-index: 2;
+      transition: all 0.2s ease-in-out;
+      font-weight: bold;
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+
+      &.actived {
+        background-color: var(--primary-color);
+        color: var(--white);
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
