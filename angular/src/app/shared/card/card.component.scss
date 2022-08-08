@@ -1,0 +1,63 @@
+.card {
+  .think-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+
+    .card-infos {
+      & .testimonials-image {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+      }
+      & .texts {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        * {
+          margin: 0;
+        }
+      }
+      & {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      strong {
+        transform: translateY(0.1rem);
+        margin-right: 0.8rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      img {
+        width: 1rem;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0;
+    & p {
+      margin: 0;
+    }
+  }
+
+  & {
+    width: 25rem;
+    border-width: 2px;
+    margin-right: 3rem;
+    padding: 1.3rem;
+    height: 100%;
+    &.actived {
+      border: solid 2px var(--primary-color);
+    }
+  }
+}
