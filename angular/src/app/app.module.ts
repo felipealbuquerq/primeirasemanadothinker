@@ -11,6 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { ProcessComponent } from './process/process.component';
 import { TestimonialsAreaComponent } from './testimonials-area/testimonials-area.component';
 import { CardComponent } from './shared/card/card.component';
+import { PlanAreaComponent } from './plan-area/plan-area.component';
+import { CardPlanComponent } from './shared/card-plan/card-plan.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { CardComponent } from './shared/card/card.component';
     ProcessComponent,
     TestimonialsAreaComponent,
     CardComponent,
+    PlanAreaComponent,
+    CardPlanComponent,
   ],
   imports: [
     BrowserModule,
