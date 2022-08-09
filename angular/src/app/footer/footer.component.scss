@@ -1,23 +1,71 @@
-.content {
-  .row {
-    .hero-image {
-      padding-left: 120px;
-    }
-    .hero-text {
-      padding-top: 50px;
-      padding-left: 50px;
-      .row {
-        margin-bottom: 20px;
+// .content {
+//   .row {
+//     .hero-image {
+//       padding-left: 120px;
+//     }
+//     .hero-text {
+//       padding-top: 50px;
+//       padding-left: 50px;
+//       .row {
+//         margin-bottom: 20px;
 
-        .hero-title {
-          h3 {
-            font-size: 20px;
-          }
+//         .hero-title {
+//           h3 {
+//             font-size: 20px;
+//           }
+//         }
+//         .hero-description {
+//           p {
+//             margin-bottom: 0.2em;
+//             font-size: 16px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+*{
+  margin: 0;
+  padding: 0;
+}
+.content {
+  background-color: #f8f8f8;
+  height: 563.12px;
+  .container {
+    padding-top: 167px;
+  }
+  .row {
+    .col {
+      margin-left: 150px;
+      margin-bottom: 23px;
+      align-items: center;
+
+      .logo {
+        margin-right: 4px;
+        img {
+          width: 41px;
+          margin-bottom: 5px;
         }
-        .hero-description {
-          p {
-            margin-bottom: 0.2em;
-            font-size: 16px;
+      }
+      .title {
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+    .row {
+      .col {
+        p {
+          margin-bottom: 0.2em;
+        }
+      }
+    }
+    .row {
+      .col {
+        .icons {
+          margin-left: -20px;
+          img {
+            margin-right: -15px;
           }
         }
       }
