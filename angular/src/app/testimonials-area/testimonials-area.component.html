@@ -1,0 +1,49 @@
+<div class="think-container">
+  <section>
+    <div class="text-container">
+      <h2 class="fw-bold text-center">
+        Thinkers que aprenderam <br />
+        e estão satisfeitos
+      </h2>
+      <h5 class="fw-lighter text-black-50 text-center subtitle">
+        Essas são as histórias de nossos thinkers que se juntaram a nós com
+        <br />
+        muito prazer ao aprender esse processo inovador.
+      </h5>
+    </div>
+
+    <div class="card-container">
+      <div class="card-items">
+        <app-card
+          *ngFor="let testimonial of testimonials; let index = index"
+          [name]="testimonial.name"
+          [place]="testimonial.place"
+          [image]="testimonial.image"
+          [stars]="testimonial.stars"
+          [text]="testimonial.text"
+          [isActived]="testimonialIndex === index"
+        ></app-card>
+      </div>
+    </div>
+    <div class="footer-testimonials">
+      <div class="marker-container">
+        <div
+          *ngFor="let testimonial of testimonials; let index = index"
+          class="marker"
+          [ngClass]="{ actived: testimonialIndex === index }"
+          (click)="handleNavigation(index, 'exact')"
+        ></div>
+      </div>
+
+      <div class="button-container">
+        <button class="btn-circle-stroke" (click)="handleNavigation(-1)">
+          <em class="bi bi-arrow-left-short"></em>
+        </button>
+
+        <button class="btn-circle-fill" (click)="handleNavigation(1)">
+          <em class="bi bi-arrow-right-short"></em>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

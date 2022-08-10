@@ -1,0 +1,19 @@
+<div class="card px-6 py-5" [ngClass]="{ actived: item.actived }">
+  <div class="card-top">
+    <img src="assets/img/gallery/free.png" [alt]="item.title" />
+    <h4 class="text-center my-4">{{ item.title }}</h4>
+    <ul class="mt-2">
+      <li class="mb-3" *ngFor="let benefit of item.benefits">
+        <img src="assets/img/gallery/ok-icon.png" alt="ok" />
+        <small>{{ benefit }}</small>
+      </li>
+    </ul>
+  </div>
+  <div class="card-bottom">
+    <div class="price">
+      <strong>{{ item.price }}</strong>
+      <small>{{ item.priceSufix }}</small>
+    </div>
+    <button [ngClass]="{ actived: item.actived }">Select</button>
+  </div>
+</div>
