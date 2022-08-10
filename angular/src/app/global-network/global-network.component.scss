@@ -1,0 +1,27 @@
+.content {
+  margin-top: 100px;
+  .global-network-image {
+    margin-top: 111px;
+  }
+  .row {
+    .global-network-text {
+      padding-top: 50px;
+      text-align: center;
+      .row {
+        margin-bottom: 20px;
+        .global-network-title {
+          h3 {
+            font-size: 35px;
+            text-align: center;
+          }
+        }
+        .global-network-description {
+          p {
+            margin-bottom: 0.2em;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

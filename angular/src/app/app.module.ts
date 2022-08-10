@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { ProcessComponent } from './process/process.component';
+import { GlobalNetworkComponent } from './global-network/global-network.component';
 import { TestimonialsAreaComponent } from './testimonials-area/testimonials-area.component';
 import { CardComponent } from './shared/card/card.component';
 
@@ -19,6 +20,7 @@ import { CardComponent } from './shared/card/card.component';
     HomeComponent,
     CounterComponent,
     ProcessComponent,
+    GlobalNetworkComponent,
     TestimonialsAreaComponent,
     CardComponent,
   ],
