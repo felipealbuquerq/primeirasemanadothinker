@@ -1,0 +1,18 @@
+<div class="card" [ngClass]="{ actived: isActived }" id="card-item">
+  <div class="think-card">
+    <div class="card-infos">
+      <img class="testimonials-image" [src]="image" alt="card user image" />
+      <div class="texts">
+        <h5>{{ name }}</h5>
+        <h6 class="fw-lighter text-black-50">{{ place }}</h6>
+      </div>
+    </div>
+    <div class="stars">
+      <strong>{{ stars }}</strong>
+      <img src="assets/img/gallery/star.png" alt="" />
+    </div>
+  </div>
+  <div class="card-body">
+    <p>{{ text }}</p>
+  </div>
+</div>

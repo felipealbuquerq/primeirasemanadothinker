@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { ProcessComponent } from './process/process.component';
 import { GlobalNetworkComponent } from './global-network/global-network.component';
+import { TestimonialsAreaComponent } from './testimonials-area/testimonials-area.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { GlobalNetworkComponent } from './global-network/global-network.componen
     HomeComponent,
     CounterComponent,
     ProcessComponent,
-    GlobalNetworkComponent
+    GlobalNetworkComponent,
+    TestimonialsAreaComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,10 +31,10 @@ import { GlobalNetworkComponent } from './global-network/global-network.componen
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    })
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
