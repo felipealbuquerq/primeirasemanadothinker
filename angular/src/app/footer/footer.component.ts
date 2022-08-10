@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+
+  data: Data = new Date();
+  year: number = this.data['getFullYear']();
+
 }
