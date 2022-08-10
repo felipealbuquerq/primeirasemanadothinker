@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { ProcessComponent } from './process/process.component';
+import { CtaCardFooterComponent } from './cta-card-footer/cta-card-footer.component';
 import { TestimonialsAreaComponent } from './testimonials-area/testimonials-area.component';
 import { CardComponent } from './shared/card/card.component';
 import { PlanAreaComponent } from './plan-area/plan-area.component';
@@ -21,6 +22,7 @@ import { CardPlanComponent } from './shared/card-plan/card-plan.component';
     HomeComponent,
     CounterComponent,
     ProcessComponent,
+    CtaCardFooterComponent,
     TestimonialsAreaComponent,
     CardComponent,
     PlanAreaComponent,
