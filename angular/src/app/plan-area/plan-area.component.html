@@ -1,0 +1,19 @@
+<section>
+  <div class="plan-container py-4 pb-8">
+    <div class="plan-header">
+      <h2 class="text-center mb-4">Escolha o seu plano</h2>
+      <h5 class="fw-lighter text-black-50 text-center mb-3">
+        Temos planos que variam de acordo com a sua necessidade e o seu perfil
+      </h5>
+    </div>
+    <div
+      class="plan-body container d-flex justify-content-evenly flex-wrap position-relative"
+    >
+      <app-card-plan
+        *ngFor="let item of plans"
+        [item]="item"
+        class="mt-5"
+      ></app-card-plan>
+    </div>
+  </div>
+</section>

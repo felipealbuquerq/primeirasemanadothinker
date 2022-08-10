@@ -1,0 +1,47 @@
+section {
+  display: flex;
+  justify-content: center;
+  & .card-container {
+    background-color: var(--white);
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    width: 80%;
+    & .card-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      & small {
+        color: var(--base-color-text);
+        font-size: 0.9rem;
+      }
+      .effect {
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: "";
+          width: 170px;
+          height: 1rem;
+          bottom: -1rem;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 1rem;
+          background-color: var(--primary-color);
+          position: absolute;
+          z-index: -1;
+          filter: blur(22px);
+        }
+      }
+      button {
+        font-weight: bold;
+        font-size: 0.9rem;
+        max-width: 220px;
+      }
+    }
+  }
+}
