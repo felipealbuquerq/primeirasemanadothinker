@@ -42,6 +42,40 @@ section {
         font-size: 0.9rem;
         max-width: 220px;
       }
+      .btn2{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    & .card-container {
+      text-align: center;
+      & .card-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          max-width: 160px;
+        }
+        .btn1{
+          display: none;
+        }
+        .effect{
+          display: none;
+        }
+        .btn2{
+          display: block;
+          margin-top: 1.4rem;
+        }
+        .efeito {
+          display: block;
+          position: relative;
+
+        }
+      }
     }
   }
 }
