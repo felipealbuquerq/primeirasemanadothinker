@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
@@ -16,6 +15,8 @@ import { CardComponent } from './shared/card/card.component';
 import { PlanAreaComponent } from './plan-area/plan-area.component';
 import { CardPlanComponent } from './shared/card-plan/card-plan.component';
 import { FooterComponent } from './footer/footer.component';
+import { environment } from 'src/environments/environment';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   declarations: [
