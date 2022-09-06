@@ -9,24 +9,59 @@
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
                 <li class="nav-item px-2" data-anchor="data-anchor">
-                    <a class="nav-link fw-medium active" aria-current="page" href="#about">Sobre</a>
+                    <a 
+                        class="nav-link fw-medium" 
+                        [ngClass]="{ 'active': isActive('about') }"
+                        aria-current="page" 
+                        fragment="about" 
+                        [routerLink]="['/']">
+                        Sobre
+                    </a>
                 </li>
                 <li class="nav-item px-2" data-anchor="data-anchor">
-                    <a class="nav-link" href="#process">Processo</a>
+                    <a 
+                        class="nav-link" 
+                        fragment="process" 
+                        [routerLink]="['/']"
+                        [ngClass]="{ 'active': isActive('process') }" 
+                    >
+                        Processo
+                    </a>
                 </li>
                 <li class="nav-item px-2" data-anchor="data-anchor">
-                    <a class="nav-link" href="#price">Preço</a>
+                    <a 
+                        class="nav-link"
+                        fragment="price"
+                        [routerLink]="['/']"
+                        [ngClass]="{ 'active': isActive('price') }"
+                    >
+                        Preço
+                    </a>
                 </li>
                 <li class="nav-item px-2" data-anchor="data-anchor">
-                    <a class="nav-link" href="#recommendations">Depoimentos</a>
+                    <a 
+                        class="nav-link"
+                        fragment="recommendations"
+                        [routerLink]="['/']"
+                        [ngClass]="{ 'active': isActive('recommendations') }"
+                    >
+                        Depoimentos
+                    </a>
                 </li>
                 <li class="nav-item px-2" data-anchor="data-anchor">
-                    <a class="nav-link" href="#community">Comunidade</a>
+                    <a 
+                        class="nav-link"
+                        fragment="community"
+                        [routerLink]="['/']"
+                        [ngClass]="{ 'active': isActive('community') }"
+                    >
+                        Comunidade
+                    </a>
                 </li>
             </ul>
             <form class="ps-lg-5">
                 <div class="signup">
-                    <a href="https://airtable.com/shrj7wn8pMzhZ4IwE">Cadastre-se</a>
+                    <a target="_blank" [href]="linkSignUp">Cadastre-se</a>
                 </div>
             </form>
         </div>

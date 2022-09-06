@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
+  linkSignUp = 'https://airtable.com/shrj7wn8pMzhZ4IwE';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  isActive = (route: string): boolean => location.href.includes(route);
 }
