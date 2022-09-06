@@ -16,7 +16,7 @@ import { PlanAreaComponent } from './plan-area/plan-area.component';
 import { CardPlanComponent } from './shared/card-plan/card-plan.component';
 import { FooterComponent } from './footer/footer.component';
 import { environment } from 'src/environments/environment';
-import { SidebarModule } from 'ng-sidebar';
+// import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   declarations: [
