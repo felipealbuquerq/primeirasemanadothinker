@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
     <div class="container">
+        <button class="navbar-toggler" (click)="show = !show" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <a class="navbar-brand" href="index.html">
             <img src="assets/img/gallery/logomarca.png" height="64px" alt="..." />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" [ngClass]="{'show':show}" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-                <li class="nav-item px-2" data-anchor="data-anchor">
+                <li class="nav-item px-2 mb-2" data-anchor="data-anchor">
                     <a 
                         class="nav-link fw-medium" 
                         [ngClass]="{ 'active': isActive('about') }"
@@ -18,7 +18,7 @@
                         Sobre
                     </a>
                 </li>
-                <li class="nav-item px-2" data-anchor="data-anchor">
+                <li class="nav-item px-2 mb-2" data-anchor="data-anchor">
                     <a 
                         class="nav-link" 
                         fragment="process" 
@@ -28,7 +28,7 @@
                         Processo
                     </a>
                 </li>
-                <li class="nav-item px-2" data-anchor="data-anchor">
+                <li class="nav-item px-2 mb-2" data-anchor="data-anchor">
                     <a 
                         class="nav-link"
                         fragment="price"
@@ -38,7 +38,7 @@
                         Preço
                     </a>
                 </li>
-                <li class="nav-item px-2" data-anchor="data-anchor">
+                <li class="nav-item px-2 mb-2" data-anchor="data-anchor">
                     <a 
                         class="nav-link"
                         fragment="recommendations"
@@ -48,7 +48,7 @@
                         Depoimentos
                     </a>
                 </li>
-                <li class="nav-item px-2" data-anchor="data-anchor">
+                <li class="nav-item px-2 mb-2" data-anchor="data-anchor">
                     <a 
                         class="nav-link"
                         fragment="community"
@@ -60,7 +60,7 @@
                 </li>
             </ul>
             <form class="ps-lg-5">
-                <div class="signup">
+                <div class="signup mt-2 ">
                     <a target="_blank" [href]="linkSignUp">Cadastre-se</a>
                 </div>
             </form>
