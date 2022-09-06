@@ -38,7 +38,8 @@
               "src/shared/scss/styles.scss",
               "src/shared/scss/variables.scss"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
           },
@@ -52,8 +53,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",
+                  "maximumError": "7kb"
                 }
               ],
               "fileReplacements": [

@@ -12,21 +12,30 @@
 }
 .counter {
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.225em 0.225em, rgba(0, 0, 0, 0.25) 0px 0.625em 0.8em, rgba(255, 255, 255, 0.1) 0px 3px 3px 6px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.225em 0.225em, rgba(0, 0, 0, 0.25) 0px 0.625em 0.8em,
+        rgba(255, 255, 255, 0.1) 0px 3px 3px 6px inset;
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 100px;
+    margin-top: 100px;
     padding-bottom: 4rem;
     height: 200px;
 }
 
-.counter-item{    
-	.counter-stat{
-		font-size: 25px;
-	}
+.counter-item {
+    .counter-stat {
+        font-size: 25px;
+    }
 
-	p{
-		margin-bottom: 0px;
-	}
+    p {
+        margin-bottom: 0px;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .section {
+        &.counter {
+            display: none;
+        }
+    }
 }

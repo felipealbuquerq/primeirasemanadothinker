@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .global-network-image {
+    img {
+      width: 90vw;
+    }
+  }
+}

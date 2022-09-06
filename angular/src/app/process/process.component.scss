@@ -21,7 +21,7 @@
                     }
                 }
                 .checklist {
-                    li { 
+                    li {
                         list-style-image: url(/assets/icons/check-icon.svg);
                         margin-bottom: 5px;
                         label {
@@ -29,9 +29,15 @@
                             margin-top: -6px;
                             margin-left: 5px;
                         }
-                    }                     
+                    }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        display: none;
     }
 }

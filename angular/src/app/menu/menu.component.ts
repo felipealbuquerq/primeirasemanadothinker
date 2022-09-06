@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class MenuComponent {
   linkSignUp = 'https://airtable.com/shrj7wn8pMzhZ4IwE';
 
-  isActive = (route: string): boolean => location.href.includes(route);
+  isActive = (route: string): boolean => location.href.includes(route);  
 }

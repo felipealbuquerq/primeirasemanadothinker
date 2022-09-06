@@ -21,3 +21,9 @@
   margin-right: 83px;
   margin-top: 100px;
 }
+
+@media screen and (max-width: 600px){
+  .bg-hero {
+    display: none;
+  }
+}
