@@ -15,5 +15,6 @@ export class FooterComponent {
 
   linkSignUp = 'https://airtable.com/shrj7wn8pMzhZ4IwE';
   linkThinkAM = 'https://thinkam.net'
+  linkDiscord = 'https://discord.gg/mqR7r8pUp9'
 
 }
