@@ -57,6 +57,12 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        h2{
+          font-size: 1.3rem;
+        }
+        & small {
+          font-size: 0.99rem;
+        }
         button {
           max-width: 160px;
         }

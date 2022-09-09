@@ -23,30 +23,7 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 600px){
-  // ESTOU ESTUDANDO ALGUMAS POSSIBILIDADES
-  // section{
-  //   .container {
-  //     width: 90%;
-  //     .text-and-cta {
-  //       .text-center{
-  //         .text-dark{
-  //           h1{
-  //             font-size: 10px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  
-  // .bg-hero {
-  //   float: right;
-  //   width: 600px;
-  //   height: 380px;
-  //   margin-right: 83px;
-  //   margin-top: 100px;
-  // }
+@media screen and (max-width: 1000px){
   .bg-hero {
     display: none;
   }

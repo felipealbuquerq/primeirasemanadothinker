@@ -1,6 +1,10 @@
 .content {
   .global-network-image {
     margin-top: 111px;
+      img{
+        width: 100%;
+        max-width: 1000px;
+      }
   }
   .row {
     .global-network-text {
@@ -29,6 +33,31 @@
   .global-network-image {
     img {
       width: 90vw;
+      }
+  }  
+    .content {
+      .row {
+        .global-network-text {
+          padding-top: 50px;
+          text-align: center;
+          .row {
+            margin-bottom: 20px;
+            .global-network-title {
+              h3 {
+                margin-left: 30px;
+                font-size: 25px;
+                text-align: center;
+              }
+            }
+            .global-network-description {
+              p {
+                margin-left: 30px;
+                margin-bottom: 0.2em;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
     }
-  }
 }
