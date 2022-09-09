@@ -74,10 +74,44 @@
       background-color: #f8f8f8;
       height: 750px;
       .container {
-          #cont2{
+        #cont2{
+            justify-content: center;
+            align-items: center;
             display: grid;
             grid-template-columns: auto ;
           }
+          .row {
+            .logo {
+              img {
+                width: 55px;
+                height: 55px;
+                margin-bottom: 5px;
+              }
+              .title-main {
+                h3 {
+                  margin-top: 6px;
+                  font-size: 30px;
+                  margin-right: 20px;
+            }
+          }
+        }
+        .title {
+          h3 {
+            font-size: 22px;
+          }
+        }
+        .subtitle {
+          p {
+            font-size: 19px;
+            margin-bottom: 0.3em;
+          }
+        }
+        .icons {
+          img {
+            width: 80px;
+          }
+        }
+      }
     }
   }
 }
