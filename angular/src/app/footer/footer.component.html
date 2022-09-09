@@ -13,8 +13,22 @@
                             <h3>Plataforma</h3>
                         </div>
                         <div class="subtitle">
-                            <p>Preço</p>
+                            <a 
+                            class="nav-link"
+                            fragment="price"
+                            [routerLink]="['/']"
+                            [ngClass]="{ 'active': isActive('price') }"
+                            >
+                                <p>Preço</p> 
+                            </a>
+                            <a 
+                            class="nav-link"
+                            fragment="community"
+                            [routerLink]="['/']"
+                            [ngClass]="{ 'active': isActive('community') }"
+                            >
                             <p>Comunidade</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
@@ -22,8 +36,17 @@
                             <h3>Descobrir</h3>
                         </div>
                         <div class="subtitle">
-                            <p>THINK A.M.?</p>
-                            <p>Sobre</p>
+                            <a target="_blank" [href]="linkThinkAM">
+                                <p>THINK A.M.?</p> 
+                             </a>
+                            <a 
+                            class="nav-link fw-medium" 
+                            [ngClass]="{ 'active': isActive('about') }"
+                            aria-current="page" 
+                            fragment="about" 
+                            [routerLink]="['/']">
+                               <p>Sobre</p> 
+                            </a>
                         </div>
                     </div>
                     <div class="col">
@@ -32,7 +55,9 @@
                         </div>
                         <div class="subtitle">
                             <p>Clube</p>
-                            <p>Seja Parceiro</p>
+                            <a target="_blank" [href]="linkSignUp">
+                               <p>Seja Parceiro</p> 
+                            </a>
                         </div>
                     </div>
            

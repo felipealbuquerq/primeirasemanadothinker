@@ -8,7 +8,12 @@ import { Data } from '@angular/router';
 })
 export class FooterComponent {
 
+  isActive = (route: string): boolean => location.href.includes(route);  
+
   data: Data = new Date();
   year: number = this.data['getFullYear']();
+
+  linkSignUp = 'https://airtable.com/shrj7wn8pMzhZ4IwE';
+  linkThinkAM = 'https://thinkam.net'
 
 }
