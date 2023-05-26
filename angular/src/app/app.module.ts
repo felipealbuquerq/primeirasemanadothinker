@@ -15,6 +15,7 @@ import { TestimonialsAreaComponent } from './testimonials-area/testimonials-area
 import { CardComponent } from './shared/card/card.component';
 import { PlanAreaComponent } from './plan-area/plan-area.component';
 import { CardPlanComponent } from './shared/card-plan/card-plan.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CardPlanComponent } from './shared/card-plan/card-plan.component';
     HomeComponent,
     CounterComponent,
     ProcessComponent,
+    FooterComponent,
     CtaCardFooterComponent,
     GlobalNetworkComponent,
     TestimonialsAreaComponent,
